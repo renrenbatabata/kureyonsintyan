@@ -9,9 +9,10 @@ titles.forEach(title => {
     const music = chrome.runtime.getURL("title_call.mp3");
     let audio = new Audio(music);
     audio.controls = true;
-    audio.autoplay = true;
+    audio.autoplay = true; // 自動再生を許可
     title.appendChild(audio);
     audio.play();
+    title.removeEventListener("mouseover", playSound);
   });
 });
 
