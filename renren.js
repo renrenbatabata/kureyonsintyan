@@ -1,10 +1,12 @@
-const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+const dazos = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
-headings.forEach((heading) => {
-  heading.textContent += 'だゾ';
+dazos.forEach((dazo) => {
+  dazo.textContent += 'だゾ';
 });
 
 
+
+const headings = document.querySelectorAll('h1, h2, h3');
 // 画像を作成
 const gifUrl = chrome.runtime.getURL("./ketu.gif");
 
@@ -12,6 +14,7 @@ const gifUrl = chrome.runtime.getURL("./ketu.gif");
 headings.forEach((heading) => {
   // 画像要素を作成
   const img = document.createElement('img');
+  img.classList.add("ketu");
   img.src = gifUrl;
   img.alt = 'ケツだし星人';
 

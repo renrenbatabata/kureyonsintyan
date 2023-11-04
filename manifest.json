@@ -5,7 +5,8 @@
   "description": "クレヨンしんちゃんの拡張機能です！",
   "content_scripts": [{
     "matches": ["<all_urls>"],
-    "js": ["renren.js"]
+    "js": ["renren.js"],
+    "css": ["renren.css"]
   }],
   "web_accessible_resources": [
     {
