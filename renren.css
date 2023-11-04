@@ -6,7 +6,10 @@
     animation-timing-function: steps(2);
     transition-duration: 2s;
     transition-property: transform;
+    max-width: 200px;
   }
+
+
 
   @keyframes leftRight {
     0% {
