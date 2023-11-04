@@ -5,11 +5,11 @@
   "description": "クレヨンしんちゃんの拡張機能です！",
   "content_scripts": [{
     "matches": ["<all_urls>"],
-    "js": ["haru.js"]
+    "js": ["haru.js", "renren.js"]
   }],
   "web_accessible_resources": [
     {
-      "resources": ["title_call.mp3"],
+      "resources": ["title_call.mp3", "ketu.gif"],
       "matches": ["<all_urls>"]
     }
   ]
