@@ -11,19 +11,14 @@ const headings = document.querySelectorAll('h1, h2, h3');
 const gifUrl = chrome.runtime.getURL("./ketu.gif");
 
 // 各見出し要素の上にGIF画像を追加
+// JavaScript
 headings.forEach((heading) => {
   // 画像要素を作成
   const img = document.createElement('img');
-  img.classList.add("ketu");
   img.src = gifUrl;
   img.alt = 'ケツだし星人';
-
-  // 見出し要素をラップするコンテナを作成
-  const container = document.createElement('div');
-  container.style.position = 'relative';
-  container.appendChild(heading.cloneNode(true)); // オリジナルの見出しをコピーしてコンテナに追加
-  container.appendChild(img); // GIF画像をコンテナに追加
-
-  // オリジナルの見出しを置き換える
-  heading.parentNode.replaceChild(container, heading);
+  img.classList.add("ketu");
+  // 見出し要素の直後に画像を追加
+  heading.parentNode.insertBefore(img, heading.nextSibling);
 });
+
