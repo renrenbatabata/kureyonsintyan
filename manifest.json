@@ -18,6 +18,5 @@
     "default_title": "クレヨンしんちゃんの拡張機能",
     "default_icon": "kureyonsintyan.png",
     "default_popup": "popup.html"
-  },
-  "author": "haru,massan,renren"
+  }
 }
