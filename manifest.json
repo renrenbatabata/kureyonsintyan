@@ -13,5 +13,10 @@
       "resources": ["title_call.mp3", "ketu.gif"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "action": {
+    "default_title": "クレヨンしんちゃんの拡張機能",
+    "default_icon": "",
+    "default_popup": "popup.html"
+  }
 }
