@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 
 body {
+  font-family: 'Kosugi Maru', sans-serif;
   width: 300px;
   border: none;
-  margin: 30px;
+  margin: 50px;
   color: #333;
   background-image: linear-gradient(0deg, rgba(254, 220, 64, 0.4), rgba(247, 93, 139, 0.4));
 }
 
 .title {
   font-size: 20px;
-  font-family: 'Kosugi Maru', sans-serif;
+  color: purple;
   border-bottom: 1px solid #333;
   text-align: center;
+  padding-bottom: 8px;
 }
 
 ul {
@@ -22,7 +24,9 @@ ul {
 }
 
 li {
+  margin: 1em 0;
   font-size: 14px;
   list-style: circle;
   margin-bottom: 8px;
+  line-height: 1.5em;
 }
