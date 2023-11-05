@@ -19,5 +19,10 @@
     "default_icon": "kureyonsintyan.png",
     "default_popup": "popup.html"
   },
+  "icons": {
+    "16": "kureyonsintyan.png",
+    "48": "kureyonsintyan.png",
+    "128": "kureyonsintyan.png"
+  },
   "author": "haru,massan,renren"
 }
