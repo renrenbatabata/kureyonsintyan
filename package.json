@@ -1,0 +1,6 @@
+{
+  "name": "kureyonsintyan",
+  "private": true,
+  "scripts": { "test": "node --test tests/regression.cjs && node tests/media.cjs" },
+  "devDependencies": { "playwright": "1.50.1" }
+}

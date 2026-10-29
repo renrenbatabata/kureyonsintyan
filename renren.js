@@ -1,7 +1,7 @@
 const dazos = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
 dazos.forEach((dazo) => {
-  dazo.textContent += 'だゾ';
+  dazo.append(document.createTextNode('だゾ'));
 });
 
 const headings = document.querySelectorAll('h1, h2, h3');
@@ -17,4 +17,3 @@ headings.forEach((heading) => {
   // 見出し要素の直後に画像を追加
   heading.parentNode.insertBefore(img, heading.nextSibling);
 });
-
