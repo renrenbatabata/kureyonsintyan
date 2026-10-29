@@ -1,10 +1,12 @@
-let observer = new MutationObserver(mutations => {
-    let images = document.getElementsByTagName('img');
-    for (let i = 0; i < images.length; i++) {
-        if(images[i].src != chrome.runtime.getURL('ketu.gif')){
-            images[i].src = chrome.runtime.getURL('ketujin.png');
-        }
+(() => {
+  const gifUrl = chrome.runtime.getURL('ketu.gif');
+  const imageUrl = chrome.runtime.getURL('ketujin.png');
+  function replaceImages() {
+    for (const image of document.getElementsByTagName('img')) {
+      if (image.src !== gifUrl && image.src !== imageUrl) image.src = imageUrl;
     }
-});
-
-observer.observe(document, { childList: true, subtree: true });
+  }
+  replaceImages();
+  const observer = new MutationObserver(replaceImages);
+  observer.observe(document, { childList: true, subtree: true });
+})();
